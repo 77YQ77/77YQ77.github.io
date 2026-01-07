@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Yao Hu</title>
+    <title>Jon Barron</title>
 
-    <meta name="author" content="Yao Hu">
+    <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -20,45 +20,23 @@
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
-                  Yao Hu
+                  Jon Barron
                 </p>
                 <p>
-		I'm currently a Research Assistant Professor with the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University. Prior to that, I was a Postdoctoral Fellow of DSAI under the supervision of Prof. Kay Chen Tan and Dr. Jibin Wu, as a member of the Machine Intelligence and Nature-Inspired Computing (MIND) Lab. I received the B.S. degree in mining engineering and the M.Sc. degree in control science and engineering from the China University of Mining and Technology under the supervision of Prof. Xiaoyan Sun, and the Ph.D. degree at the City University of Hong Kong under the supervision of Prof. Kay Chen Tan and Prof. Linqi Song.
-                </p>
-                <p>
-		My current research focus is on the data scarcity problem, privacy-preserving domain adaptation, federated learning, and applied deep learning for medical image analysis.
+		Yao Hu is currently a Research Assistant Professor with the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University. Prior to that, he was a Postdoctoral Fellow of DSAI under the supervision of Prof. Kay Chen Tan and Dr. Jibin Wu, as a member of the Machine Intelligence and Nature-Inspired Computing (MIND) Lab. He received the B.S. degree in mining engineering and the M.Sc. degree in control science and engineering from the China University of Mining and Technology under the supervision of Prof. Xiaoyan Sun, and the Ph.D. degree at the City University of Hong Kong under the supervision of Prof. Kay Chen Tan and Prof. Linqi Song.
+		His current research focus is on the data scarcity problem, privacy-preserving domain adaptation, federated learning, and applied deep learning for medical image analysis.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:echo-yao.hu@polyu.edu.hk">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=YaoHu">Google Scholar</a>
+                  <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="cv_hy(1).pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jonbarron/">Github</a>
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/YaoHu.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/YaoHu.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Education</h2>
-                <p>
-                  <strong>City University of Hong Kong (CityU)</strong>, Hong Kong SAR, China<br>
-                  Ph.D. in Computer Science, Sep 2020 - Oct 2024<br>
-                  Research direction: Data scarcity, Domain adaptation, Medical image analysis<br>
-                  Supervisors: Prof. Kay Chen Tan and Prof. Linqi Song
-                </p>
-                <p>
-                  <strong>China University of Mining and Technology (CUMT)</strong>, Xuzhou, China<br>
-                  M.Sc. in Control Science and Engineering, Sep 2017 - Jun 2020<br>
-                  Research direction: Time series analysis, Federated learning<br>
-                  Supervisor: Prof. Xiaoyan Sun
-                </p>
-                <p>
-                  <strong>China University of Mining and Technology (CUMT)</strong>, Xuzhou, China<br>
-                  B.S. in Mining Engineering, Sep 2013 - Jun 2017<br>
-                  Arithmetic mean: 82.54/100
-                </p>
+                <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -67,459 +45,243 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research focuses on data scarcity problems, privacy-preserving domain adaptation, federated learning, and applied deep learning for medical image analysis. Some papers are <span class="highlight">highlighted</span>.
+                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-<tr bgcolor="#ffffd0">
+<tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
+    <div class="one">
+      <div class="two" id='radmesh_image'>
+        <img src='images/radmesh_after.jpg' width=100%>
+      </div>
+      <img src='images/radmesh_before.jpg' width=100%>
+    </div>
+    <script type="text/javascript">
+      function radmesh_start() {
+        document.getElementById('radmesh_image').style.opacity = "1";
+      }
+
+      function radmesh_stop() {
+        document.getElementById('radmesh_image').style.opacity = "0";
+      }
+      radmesh_stop()
+    </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Source Free Semi-Supervised Transfer Learning for Diagnosis of Mental Disorders on fMRI Scans</span>
+    <a href="https://half-potato.gitlab.io/rm/">
+      <span class="papertitle">Radiance Meshes for Volumetric Reconstruction</span>
+    </a>
     <br>
-    <strong>Yao Hu</strong>, Z. Huang, R. Liu, X. Xue, X. Sun, L. Song, K. C. Tan
+    <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
+    <a href="https://github.com/Shmaug">Trevor Hedstrom</a>,
+    <a href="https://grgkopanas.github.io/">George Kopanas</a>, <br>
+	<a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>, 
+    <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
+    <strong>Jonathan T. Barron</strong>
     <br>
-    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, vol. 45, no. 11, pp. 13778–13795, 2023 (impact factor: 23.6)
+    <em>arXiv</em>, 2025
+    <br>
+    <a href="https://half-potato.gitlab.io/rm/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2512.04076">arXiv</a>
+    <p></p>
+    <p>
+	Parameterizing a scene with a Delaunay tetrahedralization and a neural field yields a scene representation that is accurate, fast to render, easy to edit, and backwards-compatible.
+    </p>
   </td>
 </tr>
 
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Communication Efficient Federated Learning With Heterogeneous Structured Client Models</span>
-    <br>
-    <strong>Yao Hu</strong>, X. Sun, Y. Tian, L. Song, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Emerging Topics in Computational Intelligence</em>, vol. 7, no. 3, pp. 753-767, 2022 (impact factor: 5.3)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Federated Multi-task Learning for Joint Diagnosis of Multiple Mental Disorders on MRI Scans</span>
-    <br>
-    Z. Huang, <strong>Yao Hu</strong> (corresponding author), R. Liu, X. Xue, L. Song, Z. Zhu, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Biomedical Engineering</em>, vol. 70, no. 4, pp. 1137-1149, 2023 (impact factor: 4.54)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">An enhanced LSTM for trend following of time series</span>
-    <br>
-    <strong>Yao Hu</strong>, X. Sun, X. Nie, Y. Li
-    <br>
-    <em>IEEE Access</em>, vol. 7, pp. 34020-34030, 2019 (impact factor: 4.098)
-  </td>
-</tr>
-
-<tr bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Surrogate-Assisted Search with Competitive Knowledge Transfer for Expensive Optimization</span>
-    <br>
-    X. Xue, <strong>Yao Hu</strong>, L. Feng, K. Zhang, L. Song, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Evolutionary Computation</em>, In press, 2024 (impact factor: 11.7)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Anti-Confounding Hashing: Enhancing Radiological Image Retrieval via Debiased Weighting and Counterfactual Reasoning</span>
-    <br>
-    Y. Zhang, <strong>Yao Hu</strong>, C. Cai, Y. Huang, Z.-A., K. C. Tan
-    <br>
-    <em>IEEE Transactions on Neural Networks and Learning Systems</em>, In press, 2025 (impact factor: 10.4)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Dynamic Graph Representation Learning for Spatio-Temporal Neuroimaging Analysis</span>
-    <br>
-    R. Liu, <strong>Yao Hu</strong>, J. Wu, K.-C. Wong, Z. Huang, Y. Huang, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Cybernetics</em>, In press, 2025 (impact factor: 9.4)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Spatial-Temporal Co-attention Learning for Diagnosis of Mental Disorders from Resting-State fMRI data</span>
-    <br>
-    R. Liu, Z. Huang, <strong>Yao Hu</strong>, Z. Zhu, K.-C. Wong, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 35, no. 8, pp. 10591-10605, 2024 (impact factor: 10.4)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">CausalMixNet: A mixed-attention framework for causal intervention in robust medical image diagnosis</span>
-    <br>
-    Y. Zhang, Y. Huang, <strong>Yao Hu</strong>, R. Liu, J. Wu, Z. Huang., K. C. Tan
-    <br>
-    <em>Medical Image Analysis</em>, 103581, 2025 (impact factor: 10.7)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Attention-like Multimodality Fusion with Data Augmentation for Diagnosis of Mental Disorders using MRI</span>
-    <br>
-    R. Liu, Z. Huang, <strong>Yao Hu</strong>, Z. Zhu, K.-C. Wong, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 36, no. 6, pp. 7627-7641, 2024 (impact factor: 14.26)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Evolutionary Sequential Transfer Optimization for Objective-Heterogeneous Problems</span>
-    <br>
-    X. Xue, C. Yang, <strong>Yao Hu</strong>, K. Zhang, Y. M. Cheung, L. Song, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Evolutionary Computation</em>, vol. 26, no. 6, pp. 1424–1438, 2021 (impact factor: 16.497)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Spatio-Temporal Hybrid Attentive Graph Network for Diagnosis of Mental Disorders on fMRI Time-Series Data</span>
-    <br>
-    R. Liu, Z. Huang, <strong>Yao Hu</strong>, L. Huang, K.-C. Wong, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Emerging Topics in Computational Intelligence</em>, 2024 (impact factor: 5.3)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Heterogeneous Structured Federated Learning with Graph Convolutional Aggregation for MRI-Based Mental Disorder Diagnosis</span>
-    <br>
-    <strong>Yao Hu</strong>, Z. Huang, R. Liu, J. Zhang, L. Song, K. C. Tan
-    <br>
-    <em>2024 International Joint Conference on Neural Networks (IJCNN)</em>, IEEE, Yokohama, Japan, July 2024
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">A Dual-stage Pseudo-Labeling Method for the Diagnosis of Mental Disorder on MRI Scans</span>
-    <br>
-    <strong>Yao Hu</strong>, Z. Huang, R. Liu, X. Xue, L. Song, K. C. Tan
-    <br>
-    <em>2022 International Joint Conference on Neural Networks (IJCNN)</em>, IEEE, Padua, Italy, July 2022
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Model and Feature Aggregation Based Federated Learning for Multi-Sensor Time Series Trend Following</span>
-    <br>
-    <strong>Yao Hu</strong>, X. Sun, Y. Chen, Z. Lu
-    <br>
-    <em>International Work-Conference on Artificial Neural Networks</em>, Springer, Gran Canaria, Spain, July 2019
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Federated Learning Assisted Interactive EDA with Dual Probabilistic Models for Personalized Search</span>
-    <br>
-    Y. Chen, X. Sun, <strong>Yao Hu</strong>
-    <br>
-    <em>International Conference on Swarm Intelligence</em>, Springer, Chiang Mai, Thailand, July 2019
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">scBIT: Integrating Single-cell Transcriptomic Data into fMRI-based Prediction for Alzheimer's Disease Diagnosis</span>
-    <br>
-    Y. Huang*, <strong>Yao Hu</strong>* (equal contributions), Y. Li, X. Cao, X. Li, K. C. Tan, Z. You, Z. Huang
-    <br>
-    <em>IEEE Transactions on Medical Imaging</em> (Under Review, 2nd round, submitted on 25-May-2025)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Enhancing X-ray Image Classification through Heterogeneous Federated Learning with Natural Image-Augmented Models</span>
-    <br>
-    <strong>Yao Hu</strong>, Y. Huang, R. Liu, X. Xue, Y. Zhang, J. Wu, Z. Huang, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (Under Review, 1st round, submitted on 03-Feb-2025)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">A Bayesian Robust Federated Learning Framework for MRI-Based Mental Disorder Diagnosis Under Noisy Labels</span>
-    <br>
-    <strong>Yao Hu</strong>, R. Liu, X. Xue, Y. Zhang, X. Sun, J. Wu, Z. Huang, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Cybernetics</em> (Under Review, 1st round, submitted on 10-May-2025)
-  </td>
-</tr>
-
-<tr>
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <img src='images/paper_placeholder.jpg' width=100%>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <span class="papertitle">Bridging the Gap: Natural Images for X-Ray Diagnosis on Scarce Samples</span>
-    <br>
-    <strong>Yao Hu</strong>, Z. Huang, R. Liu, X. Xue, J. Wu, Y. Liu, L. Song, K. C. Tan
-    <br>
-    <em>IEEE Transactions on Neural Networks and Learning Systems</em> (Under Review, 1st round, submitted on 15-Sept-2025)
-  </td>
-</tr>
+<tr onmouseout="nexf_stop()" onmouseover="nexf_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
-          <source src="images/r2r.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/r2r.jpg' width=100%>
+          <div class="two" id='nexf_image'>
+					  <img src='images/nexf_after.jpg' width=100%>
+					</div>
+          <img src='images/nexf_before.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function r2r_start() {
-            document.getElementById('r2r_image').style.opacity = "1";
+          function nexf_start() {
+            document.getElementById('nexf_image').style.opacity = "1";
           }
 
-          function r2r_stop() {
-            document.getElementById('r2r_image').style.opacity = "0";
+          function nexf_stop() {
+            document.getElementById('nexf_image').style.opacity = "0";
           }
-          r2r_stop()
+          nexf_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://relight-to-reconstruct.github.io/">
-          <span class="papertitle">Generative Multiview Relighting for
-3D Reconstruction under Extreme Illumination Variation</span>
+        <a href="https://m-niemeyer.github.io/nexf/">
+          <span class="papertitle">NExF: Learning Neural Exposure Fields for View Synthesis</span>
         </a>
         <br>
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, 
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>
+        <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
+        <a href="https://campar.in.tum.de/Main/FabianManhardt">Fabian Manhardt</a>,
+        <a href="http://www.lix.polytechnique.fr/Labo/Marie-Julie.RAKOTOSAONA/">Marie-Julie Rakotosaona</a>,
+        <a href="https://moechsle.github.io">Michael Oechsle</a>,
+        <a href="https://ait.ethz.ch/people/ctsalico">Christina Tsalicoglou</a>,
+        <a href="https://scholar.google.com/citations?user=ml3laqEAAAAJ&hl=ja">Keisuke Tateno</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="https://federicotombari.github.io/">Federico Tombari</a>
         <br>
-        <em>CVPR</em>, 2025 &nbsp <font color=#FF8080><strong>(Highlight)</strong></font>
+        <em>NeurIPS</em>, 2025
         <br>
-        <a href="https://relight-to-reconstruct.github.io/">project page</a>
+        <a href="https://m-niemeyer.github.io/nexf/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
+        <a href="https://arxiv.org/abs/2510.08279">arXiv</a>
         <p></p>
         <p>
-				Images taken under extreme illumination variation can be made consistent with diffusion, and this enables high-quality 3D reconstruction.
+		Learning a neural field that optimizes exposure for each 3D point enables high-quality 3D-consistent view synthesis despite extreme exposure variation during capture.
+        </p>
+      </td>
+    </tr>
+	
+    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bolt3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/bolt3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/bolt3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function bolt3d_start() {
+            document.getElementById('bolt3d_image').style.opacity = "1";
+          }
+
+          function bolt3d_stop() {
+            document.getElementById('bolt3d_image').style.opacity = "0";
+          }
+          bolt3d_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://szymanowiczs.github.io/bolt3d">
+          <span class="papertitle">Bolt3D: Generating 3D Scenes in Seconds</span>
+        </a>
+        <br>
+        <a href="https://szymanowiczs.github.io/">Stanislaw Szymanowicz</a>,
+        <a href="https://jasonyzhang.com">Jason Y. Zhang</a>,
+        <a href="https://pratulsrinivasan.github.io">Pratul Srinivasan</a>,
+        <a href="https://ruiqigao.github.io">Ruiqi Gao</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
+        <a href="https://holynski.org">Aleksander Holynski</a>,
+        <a href="https://ricardomartinbrualla.com">Ricardo Martin-Brualla</a>,
+		<strong>Jonathan T. Barron</strong>,
+        <a href="https://henzler.github.io">Philipp Henzler</a>
+        <br>
+        <em>ICCV</em>, 2025
+        <br>
+        <a href="https://szymanowiczs.github.io/bolt3d">project page</a>
+        /
+        <a href="https://szymanowiczs.github.io/bolt3d">arXiv</a>
+        <p></p>
+        <p>
+		By training a latent diffusion model to directly output 3D Gaussians we enable fast (~6 seconds on a single GPU) feed-forward 3D scene generation.
         </p>
       </td>
     </tr>
 
-
-    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
-          <source src="images/simvs.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/simvs.jpg' width=100%>
+          <div class="two" id='ever_image'>
+					  <img src='images/ever_after.png' width=100%>
+					</div>
+          <img src='images/ever_before.png' width=100%>
         </div>
         <script type="text/javascript">
-          function simvs_start() {
-            document.getElementById('simvs_image').style.opacity = "1";
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
           }
 
-          function simvs_stop() {
-            document.getElementById('simvs_image').style.opacity = "0";
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
           }
-          simvs_stop()
+          ever_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://alextrevithick.github.io/simvs/">
-          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
+        <a href="https://half-potato.gitlab.io/posts/ever/">
+			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+</span>
         </a>
         <br>
-        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a  href="https://poolio.github.io/">Ben Poole</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://holynski.org/">Aleksander Holynski</a>,
-        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
-        <br>
-        <em>CVPR</em>, 2025
-        <br>
-        <a href="https://alextrevithick.github.io/simvs/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
-        <p></p>
-        <p>
-        Simulating the world with video models lets you make inconsistent captures consistent.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="power_stop()" onmouseover="power_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='power_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/power.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/power.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function power_start() {
-            document.getElementById('power_image').style.opacity = "1";
-          }
-
-          function power_stop() {
-            document.getElementById('power_image').style.opacity = "0";
-          }
-          power_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://x.com/jon_barron/status/1891918200931061996">
-			<span class="papertitle">A Power Transform
-</span>
-        </a>
-        <br>
-				<strong>Jonathan T. Barron</strong>
-        <br>
-        <em>arXiv</em>, 2025
-        <br>
-        <a href="https://x.com/jon_barron/status/1891918200931061996">tweet</a>
-        /
-        <a href="https://arxiv.org/abs/2502.10647">arXiv</a>
-        <p></p>
-        <p>
-				A slight tweak to the Box-Cox power transform generalizes a variety of curves, losses, kernel functions, probability distributions, bump functions, and neural network activation functions.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
-</span>
-        </a>
-        <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
+        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
+        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
 				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
+        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<br>
+        <em>ICCV</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
         <br>
-        <em>NeurIPS</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
+        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
         /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
         <p></p>
         <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
         </p>
       </td>
     </tr>
 
 
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/cat4d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/cat4d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat4d_start() {
+            document.getElementById('cat4d_image').style.opacity = "1";
+          }
+
+          function cat4d_stop() {
+            document.getElementById('cat4d_image').style.opacity = "0";
+          }
+          cat4d_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://cat-4d.github.io/">
+			<span class="papertitle">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+</span>
+        </a>
+        <br>
+				<a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+				<a href="https://poolio.github.io/">Ben Poole</a>,
+				<a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+				<a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
+				<strong>Jonathan T. Barron</strong>,
+				<a href="https://holynski.org/">Aleksander Holynski</a>
+        <br>
+        <em>CVPR</em>, 2025 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://cat-4d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+        <p></p>
+        <p>
+				An approach for turning a video into a 4D radiance field that can be rendered in real-time. When combined with a text-to-video model, this enables text-to-4D.
+        </p>
+      </td>
+    </tr>
+
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
@@ -4439,66 +4201,25 @@ for Topologically Varying Neural Radiance Fields</span>
                 <em>The Astronomical Journal</em>, 136, 2008
                 <p>Using the relative motions of stars we can accurately estimate the date of origin of historical astronomical images.</p>
               </td>
-          </tbody></table>
+            </tr>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Honors and Awards</h2>
-                <p>
-                  1. Research Tuition Scholarships of CityU 2023-2024<br>
-                  2. Outstanding Academic Performance Award of CityU 2022-2023<br>
-                  3. PhD Scholarship of CityU 2020-2024<br>
-                  4. Outstanding Graduates of CUMT 2020<br>
-                  5. Outstanding Master's Thesis of CUMT 2020<br>
-                  6. National Scholarship for Graduate Students 2019<br>
-                  7. Jiangsu Xinjie Enterprise Scholarship 2019
-                </p>
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
+                  <span class="papertitle">Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</span>
+                </a>
+                <br>
+                <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
+                <br>
+                <em>The Astronomical Journal</em>, 135, 2008
+                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
+                <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a></p>
               </td>
             </tr>
-          </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Professional Activities</h2>
-                <p>
-                  <strong>Journal Reviewer:</strong><br>
-                  IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Evolutionary Computation (TEVC), IEEE Transactions on Medical Imaging (TMI), IEEE Transactions on Industrial Informatics (TII), Journal of Biomedical and Health Informatics (JBHI), IEEE Transactions on Cognitive and Developmental Systems (TCDS), IEEE Transactions on Emerging Topics in Computational Intelligence (TETCI), Neural Computing and Applications (NCAA)
-                </p>
-                <p>
-                  <strong>Conference Reviewer:</strong><br>
-                  International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), International Joint Conference on Neural Networks (IJCNN), IEEE Conference on Artificial Intelligence (CAI), IEEE Big Data
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Teaching Experience</h2>
-                <p>
-                  - Teaching assistant for IT Professionals and Society (CS2066)<br>
-                  - Teaching assistant for Artificial Intelligence – Past, Present, and Future (GE2340)<br>
-                  - Teaching assistant for Internet Security and e-Commerce Protocols (CS4286)<br>
-                  - Teaching assistant for Data Engineering (CS5481)<br>
-                  - Teaching assistant for Machine Learning: Principles and Practice (CS5487)
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Academic Reports</h2>
-                <p>
-                  - AI Lecture 33 - Jiangnan University (Invited by Prof. Xiaoyan Sun)<br>
-                  - Report at Dongguan University of Technology (Invited by Prof. Hanxu Hou)
-                </p>
-              </td>
-            </tr>
           </tbody></table>
 
           
